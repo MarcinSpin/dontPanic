@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>niePanikuj</title>
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   </head>
 
 	<body>
 
     <header>
-      <nav class="navbar">
+      <nav id="navbar">
         <div class="navbar__logo">
           <img src="img/logo.png" class="navbar__logo--img">
         </div>
@@ -29,7 +29,8 @@
         <div class="hero1">
           <div class="hero1__box">
             <h1 class="headingtext">Wedding Planer</h1>
-            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <br>
+            <p>Nie Panikuj to dwie dziewczyny, Basia i Edyta, którym ogromną radość sprawia zadbanie o każdy szczegół Twojego ślubu i wesela! YES WE DO!</p>
         </div>
           <div class="hero1__picture"></div>
         </div>
@@ -59,12 +60,12 @@
       </div>
     </section>
     <section>
-        <div class="pagecontainer">
-          <div class="referencecontainer">
-            <div class="referencecontainer__headline">
-              <h1 class="headingtext">Referencje</h1></div>
-            </div>
-            <div class="referencecontainer__slide">
+      <div class="pagecontainer">
+        <div class="referencecontainer">
+          <div class="referencecontainer__headline">
+            <h1 class="headingtext">Referencje</h1></div>
+          </div>
+          <div class="referencecontainer__slide">
                <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                   <div class="numbertext">1 / 3</div>
@@ -99,7 +100,7 @@
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
+          </div>
               <br>
               
               <!-- The dots/circles -->
@@ -108,13 +109,37 @@
                 <span class="dot" onclick="currentSlide(2)"></span> 
                 <span class="dot" onclick="currentSlide(3)"></span> 
               </div>
-            </div>
-            <div class="workcontainer__photo">
-  
+            
+            <div class="workcontainer__offer">
+              <div class="workcontainer__offer--text">
+                  <h1 class="headingtext">Oferta</h1>
+                  <br>
+                <p>Nie Panikuj oferuje dwa rodzaje usług:
+                  - Pełną organizację Twojego ślubu i wesela
+                  - Dekoracje okolicznościowe
+                  Do każdego zlecenia, jak i do każdej Panny Młodej, podchodzimy indywidualnie, stąd zachęcamy do wypełnienia formularza kontaktowego. Po otrzymaniu Waszego zapytania stworzymy indywidualną wycenę, szytą na Twój wymiar. Przykłady takich ofert znajdziesz poniżej.
+                  </p>
+              </div>
+              <div class="workcontainer__offer--logo">
+                <img src="img/logo.png" class="navbar__logo--img">
+              </div>
+              <div class="workcontainer__offer--cards">
+                  <h1 class="headingtext">Zaproszenia</h1>
+                  <br>
+                <p>Nie Panikuj zadba również o niezbędne elementy papeterii. Od zaproszeń po winietki dla gości -  wszystko czego potrzebujesz znajdziesz u nas. Nasza kolekcja składa się z pięciu wzorów: las, liście, maki, piwonia, jabłoń. Przejrzyj każdy w galerii, wybierz swój ulubiony wzór i napisz do nas w poniższym formularzu. W przeciągu siedmiu dni roboczych odezwiemy się do Ciebie mailowo lub telefonicznie.
+                  Wykonujemy również papeterie całkowicie indywidualną i niepowtarzalną. Jeśli marzy Ci się właśnie taka papeteria lub masz pomysł, który chciałabyś/chciałbyś zrealizować to śmiało napisz do nas, a my zrobimy wszystko aby Twoje marzenie się spełniło. W galerii znajdziesz kilka naszych nietuzinkowych realizacji.
+                  </p>
+              </div>
             </div>
           </div>
-        </div>
       </section>
+      <section>
+        
+      </section>
+
+
+
+
       <script>
       var slideIndex = 1;
 showSlides(slideIndex);
@@ -144,5 +169,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }</script>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").setAttribute(
+       "style", "top:0px; padding-top: 0px;");
+  } else {
+    document.getElementById("navbar").setAttribute(
+       "style", "top:-22px; padding-top: 22px;");
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 	</body>
 </html>

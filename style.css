@@ -5,6 +5,7 @@
 }
 html{
   font-size: 16px;
+  font-family: Roboto;
 }
 @font-face {
   font-family:'LavanderiaRegular';
@@ -20,7 +21,7 @@ html{
   font-family: 'sun';
   src: url('font/sun.ttf');
 }
-.navbar {
+#navbar {
   background-color:white;
   height:68px;
   display:flex;
@@ -28,6 +29,7 @@ html{
   align-items:center;
   position: fixed;
   z-index: 1;
+  transition: top 0.3s, padding-top 0.3s;
 }
 .navbar__logo{
   display:flex;
@@ -77,11 +79,13 @@ html{
 }
 .hero1__box{
   background-color: beige;
-  height: 28vh;
+  height: 25vh;
   width: 32vw;
   margin-top: 50px;
   border-radius: 15px;
   border: 1px solid black;
+  text-align: center;
+  font-size: 1.1rem;
 }
 .hero1__picture{
   height: 47vh;
@@ -115,18 +119,19 @@ html{
   background-repeat: no-repeat;
 }
 .hero2__logo{
-  height: 30vh;
-  width: 10%;
+  height: 25vh;
+  width: 9%;
   background-image: url("img/logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .headingtext{
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   color: black;
   font-family:"LavanderiaRegular";
   text-align: center;
+  
 }
 .workcontainer , .referencecontainer{
   display: flex;
@@ -134,12 +139,12 @@ html{
 }
 .workcontainer__headline, .referencecontainer__headline{
   background-color: beige;
-  height: 10vh;
+  height: 7vh;
   width: 25vw;
-  padding: 10px;
   border-radius: 15px;
   border: 1px solid black;
-  margin-top: 30px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .workcontainer__video{
   display: flex;
@@ -148,11 +153,10 @@ html{
 iframe{
   width: 45vw;
   height: 35vh;
-  margin-top: 15px;
 }
 .workcontainer__photo{
   width: 100%;
-  height: 40vh;
+  height: 48vh;
   background-color: beige;
   margin-top: 30px;
 }
@@ -161,8 +165,7 @@ iframe{
 
 /* Slideshow container */
 .referencecontainer__slide {
-  width: 70%;
-  height: 40vh;
+  max-width: 400px;
   position: relative;
   margin: auto;
 }
@@ -252,3 +255,30 @@ iframe{
   to {opacity: 1}
 }
 
+
+.workcontainer__offer{
+  width: 100%;
+  height: 56vh;
+  background-color: beige;
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.workcontainer__offer--text{
+  width: 45%;
+  font-size: 1.05rem;
+  line-height: 1.4rem;
+  text-align: justify;
+  padding: 20px;
+}
+.workcontainer__offer--logo{
+  text-align: center;
+  margin: auto;
+}
+.workcontainer__offer--cards{
+  width: 45%;
+  font-size: 1.05rem;
+  line-height: 1.4rem;
+  text-align: justify;
+  padding: 20px;
+}
