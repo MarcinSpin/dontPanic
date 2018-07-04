@@ -109,6 +109,7 @@ html{
 .hero2__box{
   height: 35vh;
   width: 40vw;
+  text-align: center;
 }
 .hero2__picture{
   height: 35vh;
@@ -159,6 +160,7 @@ iframe{
   height: 48vh;
   background-color: beige;
   margin-top: 30px;
+   position: relative;
 }
 
 
@@ -168,13 +170,16 @@ iframe{
   max-width: 400px;
   position: relative;
   margin: auto;
+  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides  {
     display: none;
 }
-
+.mySlidess {
+  display: none;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -281,4 +286,74 @@ iframe{
   line-height: 1.4rem;
   text-align: justify;
   padding: 20px;
+}
+
+.row1, .row2{
+  display: flex;
+  padding: 0 4px;
+  height: 25vh;
+}
+.col3boxes{
+  flex-direction: row;
+  flex: 33%;
+  max-width: 33%;
+  margin: 5px;
+}
+.col4boxes{
+  flex: 25%;
+  max-width: 25%;
+  margin: 5px;
+}
+.box1{
+  height: 100%;
+  background-image: url('img/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.05)
+}
+.box1:hover {
+  transform: scale(1.05);
+}
+.box2{
+  height: 100%;
+  background-image: url('img/2.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;   
+}
+.box3{
+  height: 100%;
+  background-image: url('img/3.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;   
+}
+.box4{
+  height: 100%;
+  background-image: url('img/4.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;   
+}
+.box5{
+  height: 100%;
+  background-image: url('img/5.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;   
+}
+.box6{
+  height: 100%;
+  background-image: url('img/6.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;   
+}
+.box7{
+  height: 100%;
+  background-image: url('img/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;   
 }
