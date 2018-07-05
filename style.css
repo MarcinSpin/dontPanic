@@ -259,6 +259,10 @@ iframe{
   from {opacity: .4} 
   to {opacity: 1}
 }
+.prev1, .next1{
+  font-size: 2.05rem;
+  color: #e91e63;
+}
 
 
 .workcontainer__offer{
@@ -287,73 +291,54 @@ iframe{
   text-align: justify;
   padding: 20px;
 }
-
 .row1, .row2{
   display: flex;
   padding: 0 4px;
   height: 25vh;
 }
 .col3boxes{
-  flex-direction: row;
   flex: 33%;
   max-width: 33%;
-  margin: 5px;
 }
 .col4boxes{
   flex: 25%;
   max-width: 25%;
-  margin: 5px;
 }
-.box1{
+.col3boxes:hover{
+  transform: scale(1.05);
+}
+.col4boxes:hover{
+  transform: scale(1.05);
+}
+.col3boxes, .col4boxes{
+  margin: 5px;
+  overflow: hidden;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7{
   height: 100%;
-  background-image: url('img/1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: scale(1.05)
 }
-.box1:hover {
-  transform: scale(1.05);
+.box1{
+  background-image: url('img/1.jpg');
 }
 .box2{
-  height: 100%;
-  background-image: url('img/2.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;   
+  background-image: url('img/2.jpg');  
 }
 .box3{
-  height: 100%;
-  background-image: url('img/3.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;   
+  background-image: url('img/3.jpg');  
 }
 .box4{
-  height: 100%;
   background-image: url('img/4.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;   
 }
 .box5{
-  height: 100%;
   background-image: url('img/5.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;   
 }
 .box6{
-  height: 100%;
-  background-image: url('img/6.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;   
+  background-image: url('img/6.jpg');  
 }
 .box7{
-  height: 100%;
-  background-image: url('img/7.jpg');
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;   
+  background-image: url('img/7.jpg');   
 }
