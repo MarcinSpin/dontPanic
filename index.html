@@ -14,26 +14,26 @@
   <header>
     <nav id="navbar">
       <div class="navbar__logo">
-        <img src="img/logo.png" class="navbar__logo--img">
+        <img src="img/logo.png" class="navbar__logo--img" >
       </div>
       <ul class="navbar__menu">
         <li>
-          <a class="navbar__menu--links" href="#">O nas</a>
+          <a class="navbar__menu--links" href="#" id="click1">O nas</a>
         </li>
         <li>
-          <a class="navbar__menu--links" href="#">Oferta</a>
+          <a class="navbar__menu--links" href="#" id="click2">Oferta</a>
         </li>
         <li>
-          <a class="navbar__menu--links" href="#">Kontakt</a>
+          <a class="navbar__menu--links" href="#" id="click3">Kontakt</a>
         </li>
         <li>
-          <a class="navbar__menu--links" href="#">Zaproszenia</a>
+          <a class="navbar__menu--links" href="#" id="click4">Zaproszenia</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <section>
+  <section id="div1">
     <div class="pagecontainer">
       <div class="hero1">
         <div class="hero1__box">
@@ -56,7 +56,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="div2">
     <div class="pagecontainer">
       <div class="workcontainer">
         <div class="workcontainer__headline">
@@ -132,7 +132,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="div3">
     <div class="pagecontainer">
       <div class="referencecontainer">
         <div class="referencecontainer__headline">
@@ -186,6 +186,7 @@
 
       <div class="workcontainer__offer">
         <div class="workcontainer__offer--text">
+            <br>
           <h1 class="headingtext">Oferta</h1>
           <br>
           <p>Nie Panikuj oferuje dwa rodzaje usług: - Pełną organizację Twojego ślubu i wesela - Dekoracje okolicznościowe Do
@@ -198,6 +199,7 @@
           <img src="img/logo.png" class="navbar__logo--img">
         </div>
         <div class="workcontainer__offer--cards">
+            <br>
           <h1 class="headingtext">Zaproszenia</h1>
           <br>
           <p>Nie Panikuj zadba również o niezbędne elementy papeterii. Od zaproszeń po winietki dla gości - wszystko czego potrzebujesz
@@ -219,35 +221,49 @@
             <h1 class="headingtext">Formularz</h1>
             <div class="container">
                 <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="fname">Imie</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Imie">
               
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="lname">Nazwisko</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Nazwisko">
               
-                  <label for="country">Country</label>
+                  <!--<label for="country">Country</label>
                   <select id="country" name="country">
                     <option value="australia">Australia</option>
                     <option value="canada">Canada</option>
                     <option value="usa">USA</option>
                   </select>
+                -->
+                  <label for="subject">Treść</label>
+                  <textarea id="subject" name="subject" placeholder="Napisz..." style="height:140px"></textarea>
               
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:140px"></textarea>
-              
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Wyślij">
                 </form>
               </div>
         </div>
         <div class="infocontainer__photo">
-            <h1 class="headingtext">Referencje</h1>
+            <h1 class="headingtext">Happy Ending</h1>
+            <div class="infocontainer__photo--jpg"></div>
         </div>
         <div class="infocontainer__invit">
             <h1 class="headingtext">Zaproszenia</h1>
+            <br>
+          <p>Nie Panikuj zadba również o niezbędne elementy papeterii. Od zaproszeń po winietki dla gości - wszystko czego potrzebujesz
+            znajdziesz u nas. Nasza kolekcja składa się z pięciu wzorów: las, liście, maki, piwonia, jabłoń. Przejrzyj każdy
+            w galerii, wybierz swój ulubiony wzór i napisz do nas w poniższym formularzu. W przeciągu siedmiu dni roboczych
+            odezwiemy się do Ciebie mailowo lub telefonicznie. Wykonujemy również papeterie całkowicie indywidualną i niepowtarzalną.
+            Jeśli marzy Ci się właśnie taka papeteria lub masz pomysł, który chciałabyś/chciałbyś zrealizować to śmiało napisz
+            do nas, a my zrobimy wszystko aby Twoje marzenie się spełniło. W galerii znajdziesz kilka naszych nietuzinkowych
+            realizacji.
+          </p>
         </div>
       </div>
       <footer>
-
+        <div>
+          <p>niePanikuj - kontakt tel 888 888 888</p>
+         
+          <p>email dontpanic@gmail.com</p>
+        </div>
       </footer>
     </div>
   </section>
@@ -391,6 +407,31 @@
 			console.log(e);
 		});
 	});
+</script>
+
+<script>
+  $(document).ready(function() {
+      $("#click3").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#div3").offset().top
+          }, 1000);
+      });
+      $("#click2").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#div2").offset().top
+          }, 1000);
+      });
+      $("#click1").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#div1").offset().top
+          }, 1000);
+      });
+      $("#click4").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#div4").offset().top
+          }, 1000);
+      });
+  });
 </script>
 </body>
 

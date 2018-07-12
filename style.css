@@ -62,6 +62,26 @@ html{
   font-family: "sun";
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+}
+.navbar__menu--links:after {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 3px;
+  bottom: 2px;
+  left: -7px;
+  background: #9CF5A6;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.navbar__menu--links:hover:after,
+.navbar__menu--links:focus:after {
+  visibility: visible;
+  transform: scaleX(1);
 }
 .pagecontainer{
   height: 100vh;
@@ -128,11 +148,10 @@ html{
   background-repeat: no-repeat;
 }
 .headingtext{
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   color: black;
   font-family:"LavanderiaRegular";
   text-align: center;
-  
 }
 .workcontainer , .referencecontainer{
   display: flex;
@@ -144,8 +163,8 @@ html{
   width: 25vw;
   border-radius: 15px;
   border: 1px solid black;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .workcontainer__video{
   display: flex;
@@ -159,7 +178,7 @@ iframe{
   width: 100%;
   height: 48vh;
   background-color: beige;
-  margin-top: 30px;
+  margin-top: 10px;
    position: relative;
 }
 
@@ -167,10 +186,10 @@ iframe{
 
 /* Slideshow container */
 .referencecontainer__slide {
-  max-width: 400px;
+  max-width: 480px;
   position: relative;
   margin: auto;
-  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+  
 }
 
 /* Hide the images by default */
@@ -265,29 +284,23 @@ iframe{
 }
 .workcontainer__offer{
   width: 100%;
-  height: 56vh;
+  height: 54vh;
   background-color: beige;
   display: flex;
   justify-content: space-evenly;
 }
-.workcontainer__offer--text{
+.workcontainer__offer--text, .workcontainer__offer--cards{
   width: 45%;
   font-size: 1.05rem;
   line-height: 1.4rem;
   text-align: justify;
   padding: 20px;
+  padding-top: 0px;
 }
 .workcontainer__offer--logo{
-  text-align: center;
   margin: auto;
 }
-.workcontainer__offer--cards{
-  width: 45%;
-  font-size: 1.05rem;
-  line-height: 1.4rem;
-  text-align: justify;
-  padding: 20px;
-}
+
 .row1, .row2{
   display: flex;
   padding: 0 4px;
@@ -341,18 +354,22 @@ iframe{
 }
 .infocontainer{
   width: 100%;
-  height: 56vh;
   display: flex;
   justify-content: space-evenly;
 }
 .infocontainer__form, .infocontainer__photo, .infocontainer__invit{
-  margin-top: 5%;
+  margin-top: 6%;
   background-color: beige;
+  
 }
 footer{
   background-color: beige;
-  height: 18vh;
-  margin-top: 29vh;
+  /* height: 19vh; */
+  /* margin-top: 100px; */
+  position: absolute;
+  bottom: -300vh;
+  height: 100px;
+  width: 100%;
 }
 
 input[type=text], select, textarea {
@@ -383,4 +400,42 @@ input[type=submit]:hover {
   border-radius: 5px;
   padding: 20px;
   width: 33vw;
+}
+.infocontainer__photo--jpg{
+  height: 90%;
+  background-image: url(img/zdjeciepary.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.infocontainer__photo {
+  height: 35vh;
+  width: 20vw;
+  margin-top: 12%;
+}
+
+.infocontainer__invit{
+  width: 30vw;
+  text-align: justify;
+  padding: 20px;
+}
+
+footer > div{
+  display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+footer > div p{
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  font-family: "sun";
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
