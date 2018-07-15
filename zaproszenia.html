@@ -124,9 +124,9 @@
         </div>
     </section>
     <section id="div1">
-            <div class="pagecontainer">
+            <div class="pagecontainer white">
                 <div class="boxes">
-                    <div class="boxes__one">
+                    <div class="boxes__one white">
                         <div class="boxes__one--heading">
                         <h1 class="headingtext">Zamawiajac zaproszenia otrzymujesz</h1>
                         <br>
@@ -137,22 +137,54 @@
                                 w galerii, wybierz swój ulubiony wzór i napisz do nas w poniższym formularzu. W przeciągu siedmiu dni roboczych
                                 odezwiemy się do Ciebie mailowo lub telefonicznie. Wykonujemy również papeterie całkowicie indywidualną i niepowtarzalną.
                         </p>
-                        <div class="boxes__one--button">Zobacz</div>
+                        <br>
+                        <a href ="pdf/identyfikacja.pdf" target="_blank"><div class="boxes__one--button">Zobacz</div></a>
                         </div>
                     </div>
                     <div class="boxes__two">
-                        <div class="boxes__two--heading">
-                            <h1 class="headingtext">Gotowe zaproszenia</h1>
-                            <br>
-                        </div>
-                        <div class="boxes__two--img">
-                          
+                        <div class="boxes__two--img1"></div>
+                        <div class="boxes__two--img2"></div>
+                  
                         <div class="boxes__two--logo">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="div4">
+            <div class="pagecontainer">
+              <div class="infocontainer">
+                <div class="infocontainer__form">
+                    <h1 class="headingtext">Wypełnij</h1>
+                    <div class="container">
+                        <form action="/action_page.php">
+                          <label for="fname">Imie</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Imie">
+                      
+                          <label for="lname">Nazwisko</label>
+                          <input type="text" id="lname" name="lastname" placeholder="Nazwisko">
+                      
+                          <!--<label for="country">Country</label>
+                          <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                          </select>
+                        -->
+                          <label for="subject">Treść</label>
+                          <textarea id="subject" name="subject" placeholder="Napisz..." style="height:140px"></textarea>
+                      
+                          <input type="submit" value="Wyślij">
+                        </form>
+                      </div>
+                </div>
+        <footer class="new" >
+            <div >
+              <p>niePanikuj - kontakt tel 888 888 888</p>
+             
+              <p>email dontpanic@gmail.com</p>
+            </div>
+          </footer>
     <script>
         var slideIndex = 1;
         showSlidess(slideIndex);

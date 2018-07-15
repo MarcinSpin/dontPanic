@@ -85,7 +85,7 @@ html{
 }
 .pagecontainer{
   height: 100vh;
-  background-image:url("img/tlo.jpg");
+  background-image:url("img/tlo-new.jpg");
   background-size: cover; 
   background-attachment: fixed;
 }
@@ -369,6 +369,9 @@ footer{
   height: 100px;
   width: 100%;
 }
+.new {
+  bottom: -200vh;
+}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -444,9 +447,8 @@ footer > div p{
   display: flex;
 }
 .boxes__one{
-  width: 50%;
   background-color: antiquewhite;
-  width: 50%;
+  width: 43%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -454,18 +456,17 @@ footer > div p{
   text-align: justify;
 }
 .boxes__two{
-  width: 50%;
+  width: 57%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .boxes__one--text{
   padding: 0px 20px;
 }
-.boxes__two--img{
-  background-image: 
-}
+
 .boxes__one--button{
   background-color: beige;
   border-radius: 15px;
@@ -473,4 +474,37 @@ footer > div p{
   text-align: center;
   margin: auto;
   width: 180px;
+  
+}
+.boxes__one--button:hover{
+    transform: scale(1.05);
+}
+.boxes__one a{
+  text-decoration: none;
+}
+.white{
+  background-image: none;
+  background-color: white;
+}
+.boxes__two--img1{
+  height: 80%;
+  width: 57%;
+  background-image: url(img/pdf1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -10px;
+  top: 33px;
+}
+.boxes__two--img2{
+  height: 75%;
+  width: 55%;
+  background-image: url(img/pdf2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 200px;
+  top: 154px;
 }
