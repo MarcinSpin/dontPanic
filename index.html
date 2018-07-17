@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href='dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -16,7 +17,13 @@
       <div class="navbar__logo">
         <img src="img/logo.png" class="navbar__logo--img" >
       </div>
-      <ul class="navbar__menu">
+      <div id="menuToggle" >
+          <p class="menu-label">Menu</p>
+            <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+      <ul class="navbar__menu" id="menu">
         <li>
           <a class="navbar__menu--links" href="#" id="click1">O nas</a>
         </li>
@@ -33,12 +40,14 @@
           <a class="navbar__menu--links" href="zaproszenia.html">Zaproszenia</a>
         </li>
       </ul>
+      </div>
     </nav>
   </header>
 
   <section id="div1">
     <div class="pagecontainer">
       <div class="hero1">
+        <div class="dummy"></div>
         <div class="hero1__box">
           <h1 class="headingtext">Wedding Planer</h1>
           <br>
@@ -54,6 +63,7 @@
           <br>
           <p>Nie Panikuj to dwie dziewczyny, Basia i Edyta, którym ogromną radość sprawia zadbanie o każdy szczegół Twojego
             ślubu i wesela! YES WE DO!</p>
+            <div class="hero2__logo--m"></div>
         </div>
         <div class="hero2__logo"></div>
       </div>
