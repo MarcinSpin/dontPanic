@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href='dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -17,13 +16,7 @@
       <div class="navbar__logo">
         <img src="img/logo.png" class="navbar__logo--img" >
       </div>
-      <div id="menuToggle" >
-          <p class="menu-label">Menu</p>
-            <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-      <ul class="navbar__menu" id="menu">
+      <ul class="navbar__menu">
         <li>
           <a class="navbar__menu--links" href="#" id="click1">O nas</a>
         </li>
@@ -40,14 +33,12 @@
           <a class="navbar__menu--links" href="zaproszenia.html">Zaproszenia</a>
         </li>
       </ul>
-      </div>
     </nav>
   </header>
 
   <section id="div1">
     <div class="pagecontainer">
       <div class="hero1">
-        <div class="dummy"></div>
         <div class="hero1__box">
           <h1 class="headingtext">Wedding Planer</h1>
           <br>
@@ -63,7 +54,6 @@
           <br>
           <p>Nie Panikuj to dwie dziewczyny, Basia i Edyta, którym ogromną radość sprawia zadbanie o każdy szczegół Twojego
             ślubu i wesela! YES WE DO!</p>
-            <div class="hero2__logo--m"></div>
         </div>
         <div class="hero2__logo"></div>
       </div>
@@ -157,31 +147,31 @@
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
           <img src="img/Monia.png" style="width:100%">
-          
+          <div class="text">Caption Text</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
           <img src="img/Martyna.png" style="width:100%">
-          
+          <div class="text">Caption Two</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img src="img/Piotr.png" style="width:100%">
-          
+          <div class="text">Caption Three</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img src="img/Kasia.png" style="width:100%">
-          
+          <div class="text">Caption Three</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img src="img/Paula.png" style="width:100%">
-          
+          <div class="text">Caption Three</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -209,7 +199,7 @@
           </p>
         </div>
         <div class="workcontainer__offer--logo">
-          <img src="img/logo.png" class="workcontainer__offer--img">
+          <img src="img/logo.png" class="navbar__logo--img">
         </div>
         <div class="workcontainer__offer--cards">
             <br>
@@ -248,7 +238,7 @@
                   </select>
                 -->
                   <label for="subject">Treść</label>
-                  <textarea id="subject" name="subject" placeholder="Napisz..." style="height:90px"></textarea>
+                  <textarea id="subject" name="subject" placeholder="Napisz..." style="height:140px"></textarea>
               
                   <input type="submit" value="Wyślij">
                 </form>
@@ -352,23 +342,23 @@
     }
   </script>
 
-<script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").setAttribute(
-        "style", "top:0px; padding-top: 0px;");
-    } else {
-      document.getElementById("navbar").setAttribute(
-        "style", "top:-22px; padding-top: 22px;");
+
+
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").setAttribute(
+          "style", "top:0px; padding-top: 0px;");
+      } else {
+        document.getElementById("navbar").setAttribute(
+          "style", "top:-22px; padding-top: 22px;");
+      }
+      prevScrollpos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
-  }
-</script>
-
-
-  
+  </script>
 
 
 
