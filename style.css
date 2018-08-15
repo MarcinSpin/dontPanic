@@ -58,7 +58,7 @@ html{
   align-items: center;
   text-decoration: none;
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-family: "sun";
   font-weight: 600;
   text-transform: uppercase;
@@ -85,7 +85,7 @@ html{
 }
 .pagecontainer{
   height: 100vh;
-  background-image:url("img/tlo-new.jpg");
+  background-image:url("img/tlo2.jpg");
   background-size: cover; 
   background-attachment: fixed;
 }
@@ -121,13 +121,16 @@ html{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
 }
 .hero2__box{
   height: 35vh;
   width: 40vw;
   text-align: center;
 }
+.pagecontainer p{
+  padding: 10px;
+}
+
 .hero2__picture{
   height: 35vh;
   width: 30vw;
@@ -145,10 +148,12 @@ html{
   background-repeat: no-repeat;
 }
 .headingtext{
-  font-size: 2.1rem;
+  font-size: 2.0rem;
   color: black;
-  font-family:"LavanderiaRegular";
+  font-family:"sun";
   text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
 }
 .workcontainer , .referencecontainer{
   display: flex;
@@ -183,7 +188,7 @@ iframe{
 
 /* Slideshow container */
 .referencecontainer__slide {
-  max-width: 480px;
+  max-width: 420px;
   position: relative;
   margin: auto;
   
@@ -281,13 +286,14 @@ iframe{
 }
 .workcontainer__offer{
   width: 100%;
-  height: 54vh;
+  /*height: 54vh;*/
   background-color: beige;
   display: flex;
   justify-content: space-evenly;
 }
 .workcontainer__offer--text, .workcontainer__offer--cards{
-  width: 45%;
+  /*width: 45%;*/
+  width:80%;
   font-size: 1.05rem;
   line-height: 1.4rem;
   text-align: justify;
@@ -533,7 +539,10 @@ footer > div p{
   *{
     /*border: 1px solid;*/
   }
-
+  .headingtext{
+  
+    padding: 2px;
+  }
  
   .menu-label{
     position: absolute;
@@ -654,7 +663,7 @@ footer > div p{
   #menu
   {
     position: absolute;
-    width: 127px;
+    width: 157px;
     margin: 11px 0px 0 0px;
     padding: 25px;
     display: block;
@@ -710,14 +719,14 @@ footer > div p{
 }
   .hero2__logo--m{
     display: block;
-    height: 12vh;
+    height: 14vh;
     width: 28%;
     background-image: url(img/logo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .hero2__logo{
     display: none;
