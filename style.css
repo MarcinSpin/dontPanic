@@ -89,6 +89,14 @@ html{
   background-size: cover; 
   background-attachment: fixed;
 }
+
+.pagecontainer3{
+  height: 100%;
+  background-image:url("img/tlo2.jpg");
+  background-size: cover; 
+  background-attachment: fixed;
+}
+
 .hero1{
   height: 65vh;
   width: 100%;
@@ -120,7 +128,7 @@ html{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .hero2__box{
   height: 35vh;
@@ -171,6 +179,8 @@ html{
 .workcontainer__video{
   display: flex;
   justify-content: center;
+  margin-bottom: 29px;
+    margin-top: 15px;
 }
 iframe{
   width: 45vw;
@@ -178,8 +188,7 @@ iframe{
 }
 .workcontainer__photo{
   width: 100%;
-  height: 48vh;
-  background-color: beige;
+  
   margin-top: 10px;
    position: relative;
 }
@@ -286,10 +295,11 @@ iframe{
 }
 .workcontainer__offer{
   width: 100%;
-  /*height: 54vh;*/
+  margin-bottom: 20px;
+    margin-top: 20px;
   background-color: beige;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .workcontainer__offer--text, .workcontainer__offer--cards{
   /*width: 45%;*/
@@ -309,7 +319,7 @@ iframe{
 .row1, .row2{
   display: flex;
   padding: 0 4px;
-  height: 25vh;
+  height: 30vh;
 }
 .col3boxes{
   flex: 33%;
@@ -357,23 +367,22 @@ iframe{
   background-image: url('img/7.jpg');   
 }
 .infocontainer{
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+
+      display: flex;
+      
+      flex-direction: column;
+      align-items: center;
 }
-.infocontainer__form, .infocontainer__photo, .infocontainer__invit{
+.infocontainer__form, .infocontainer__invit{
   margin-top: 6%;
   background-color: beige;
   
 }
 footer{
   background-color: beige;
-  /* height: 19vh; */
-  /* margin-top: 100px; */
-  position: absolute;
-  bottom: -300vh;
   height: 100px;
   width: 100%;
+  
 }
 .new {
   bottom: -200vh;
@@ -410,16 +419,18 @@ input[type=submit]:hover {
 }
 .infocontainer__photo--jpg{
   height: 90%;
-  background-image: url(img/zdjeciepary.png);
+  background-image: url(img/niepanikuj2.JPG);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 20px;
   
 }
 .infocontainer__photo {
   height: 35vh;
   width: 20vw;
-  margin-top: 12%;
+  
 }
 
 .infocontainer__invit{
@@ -462,12 +473,13 @@ footer > div p{
   text-align: justify;
 }
 .boxes__two{
-  width: 57%;
+  height: 360px;
+  width: 80%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  
 }
 .boxes__one--text{
   padding: 0px 20px;
@@ -492,32 +504,26 @@ footer > div p{
   background-image: none;
   background-color: white;
 }
-.boxes__two--img1{
-  height: 80%;
-  width: 57%;
+.boxes__two--img1, .boxes__two--img2{
+  height: 90%;
+  width: 50%;
   background-image: url(img/pdf1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
-  left: -10px;
-  top: 33px;
+  margin: auto;
 }
 .boxes__two--img2{
-  height: 75%;
-  width: 55%;
   background-image: url(img/pdf2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 200px;
-  top: 154px;
 }
 .hero2__logo--m{
   display: none;
 }
+.links a{
+  width: 100%;
+  height: 100%;
 
+}
 
 .workcontainer__offer--img{
   height: 67px;
@@ -711,16 +717,16 @@ footer > div p{
     
   }
   .hero1__picture {
-    height: 45%;
-    width: 38%;
+    height: 50%;
+    width: 37%;
     margin: auto;
-    margin-top: 26px;
+    margin-top: 8px;
     background-position: inherit;
 }
   .hero2__logo--m{
     display: block;
-    height: 14vh;
-    width: 28%;
+    height: 12vh;
+    width: 20%;
     background-image: url(img/logo.png);
     background-size: cover;
     background-position: center;
@@ -758,7 +764,7 @@ footer > div p{
   }
   .pagecontainer {
     height: 100%;
-    background-attachment: inherit;
+    /*background-attachment: inherit;*/
   }
   .workcontainer__offer--text, .workcontainer__offer--cards {
     width: 100%;
@@ -773,17 +779,23 @@ footer > div p{
   .workcontainer__offer--img {
    margin-left: 40%;
   }
-  .infocontainer {
-    display: block;
-  }
+  
   .container {
     width: 100%;
   }
-  .infocontainer__invit , .infocontainer__photo{
+  .infocontainer__invit {
     display: none;
 }
 .workcontainer__offer--logo {
   background-color: white;
+}
+.infocontainer{
+  width: 80%;
+  margin: auto;
+}
+.infocontainer__photo{
+  height: 17vh;
+    width: 30vw;
 }
 .boxes{
   display: block;
@@ -793,20 +805,21 @@ footer > div p{
  width: 100%; 
 }
 .boxes__two--img{
-  width: 130%;
+  width: 100%;
 }
 .boxes__two{
   margin: auto;
-  margin-top: 27px;
+  height: 200px;
+  width: 100%;
 }
 .white{
   margin-top: 27px;
 }
-footer{
-background-color: white;
-    position: initial;
+.mobile{
+  margin: auto;
+  height: inherit;
+  margin-top: 20px;
+  flex-direction: column;
 }
-.big{
-  width: 66vw; 
-}
+
 }
