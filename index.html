@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href='dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favico.ico" sizes="16x16" />
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-      <ul class="navbar__menu" id="menu">
+      <ul class="navbar__menu navbar__menu2" id="menu">
         <li>
           <a class="navbar__menu--links" href="#" id="click1">O nas</a>
         </li>
@@ -156,31 +157,31 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 5</div>
-          <a href="img/Monia.png" target="_blank"><img src="img/Monia.png" style="width:100%">
+          <a href="img/Monia.png"><img src="img/Monia.png" style="width:100%">
           </a>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 5</div>
-          <a href="img/Martyna.png" target="_blank"><img src="img/Martyna.png" style="width:100%">
+          <a href="img/Martyna.png"><img src="img/Martyna.png" style="width:100%">
           </a>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 5</div>
-          <a href="img/Piotr.png" target="_blank"><a href="img/Piotr.png"></a><img src="img/Piotr.png" style="width:100%">
+          <a href="img/Piotr.png"><a href="img/Piotr.png"></a><img src="img/Piotr.png" style="width:100%">
           </a>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">4 / 5</div>
-          <a href="img/Kasia.png" target="_blank"><img src="img/Kasia.png" style="width:100%">
+          <a href="img/Kasia.png"><img src="img/Kasia.png" style="width:100%">
           </a>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">5 / 5</div>
-          <a href="img/Paula.png" target="_blank"><img src="img/Paula.png" style="width:100%">
+          <a href="img/Paula.png"><img src="img/Paula.png" style="width:100%">
           </a>
         </div>
 
@@ -208,29 +209,13 @@
             takich ofert znajdziesz poniżej.
           </p>
         </div>
-        <!--<div class="workcontainer__offer--logo">
-          <img src="img/logo.png" class="workcontainer__offer--img">
-        </div>
-        <div class="workcontainer__offer--cards">
-            
-          <h1 class="headingtext">Zaproszenia</h1>
-          
-          <p>Nie Panikuj zadba również o niezbędne elementy papeterii. Od zaproszeń po winietki dla gości - wszystko czego potrzebujesz
-            znajdziesz u nas. Nasza kolekcja składa się z pięciu wzorów: las, liście, maki, piwonia, jabłoń. Przejrzyj każdy
-            w galerii, wybierz swój ulubiony wzór i napisz do nas w poniższym formularzu. W przeciągu siedmiu dni roboczych
-            odezwiemy się do Ciebie mailowo lub telefonicznie. Wykonujemy również papeterie całkowicie indywidualną i niepowtarzalną.
-            Jeśli marzy Ci się właśnie taka papeteria lub masz pomysł, który chciałabyś/chciałbyś zrealizować to śmiało napisz
-            do nas, a my zrobimy wszystko aby Twoje marzenie się spełniło. W galerii znajdziesz kilka naszych nietuzinkowych
-            realizacji.
-          </p>
-        </div>
-        !-->
+        
       </div>
   
     
       <div class="boxes__two links">
-        <a href="img/pdf1.jpg" target="_blank"><div class="boxes__two--img1"></div></a>
-        <a href="img/pdf2.jpg" target="_blank"><div class="boxes__two--img2"></div></a>
+        <a href="img/pdf1.jpg"><div class="boxes__two--img1"></div></a>
+        <a href="img/pdf2.jpg"><div class="boxes__two--img2"></div></a>
       
     </div>
   </section>
@@ -240,67 +225,73 @@
         <div class="infocontainer__form">
             <h1 class="headingtext">Napisz do Nas</h1>
             <div class="container big">
-              <form action="/action_page.php">
-                <h3>1. Informacje Podstawowe</h3>
-                <br>
-                <label for="fname">Imiona Państwa Młodych</label>
-                <input type="text" id="imiona" name="Imiona" placeholder="Imiona">
-                <br>
-                <label for="lname">Data ślubu</label>
-                <input type="date" id="data" name="data">
-                <br>
-                <label for="fname">Ilość gości</label>
-                <input type="number" id="goscie" name="goscie">
+              
+                <button class="accordion"><h3>1. Informacje Podstawowe</h3></button>
+                  <div class="panel">
+                      <form action="/action_page.php">
+                    <br>
+                    <label for="fname">Imiona Państwa Młodych</label>
+                    <input type="text" id="imiona" name="Imiona" placeholder="Imiona">
+                    <br>
+                    <label for="lname">Data ślubu</label>
+                    <input type="date" id="data" name="data">
+                    <br>
+                    <label for="fname">Ilość gości</label>
+                    <input type="number" id="goscie" name="goscie">
+    
+                    <label for="fname">Email</label>
+                    <input type="email" id="email" name="email">
+    
+                    <label for="fname">Tel Kontakowy</label>
+                    <input type="tel" id="tel" name="tel">
+    
+                    <label for="fname">Którymi usługami są Państwo zainteresowani?</label>
+                    <br><br>
+                    <label>Pełna organizacja wesela<input type="checkbox" id="myCheck"></label>
+                    <label>Scenariusz ceremonii zaślubin<input type="checkbox" id="myCheck"</label>
+                    <label>Dekoracje<input type="checkbox" id="myCheck"></label>
+                    <label>Sam bukiet Pannny Młodej<input type="checkbox" id="myCheck"></label>
+                    <label>Inne<input type="checkbox" id="myCheck"></label>
+                    
+                    <br><br>
+                    <label for="fname">Miejsce ceremonii</label>
+                    <input type="text" id="miejsce" name="Imiona" placeholder="Miejsce ceremonii">
+    
+                    <label for="fname">Miejsce Wesela</label>
+                    <input type="text" id="miejsce" name="Imiona" placeholder="Miejsce Wesela">
+                      </form>
+                  </div>
 
-                <label for="fname">Email</label>
-                <input type="email" id="email" name="email">
-
-                <label for="fname">Tel Kontakowy</label>
-                <input type="tel" id="tel" name="tel">
-
-                <label for="fname">Którymi usługami są Państwo zainteresowani?</label>
-                <br><br>
-                <label>Pełna organizacja wesela<input type="checkbox" id="myCheck"></label>
-                <label>Scenariusz ceremonii zaślubin<input type="checkbox" id="myCheck"</label>
-                <label>Dekoracje<input type="checkbox" id="myCheck"></label>
-                <label>Sam bukiet Pannny Młodej<input type="checkbox" id="myCheck"></label>
-                <label>Inne<input type="checkbox" id="myCheck"></label>
-                
-                <br><br>
-                <label for="fname">Miejsce ceremonii</label>
-                <input type="text" id="miejsce" name="Imiona" placeholder="Miejsce ceremonii">
-
-                <label for="fname">Miejsce Wesela</label>
-                <input type="text" id="miejsce" name="Imiona" placeholder="Miejsce Wesela">
-
-                <h3>2. Dekoracje</h3>
-                <br>
-                <label for="fname">Motyw przewodni</label>
-                <input type="text" id="imiona" name="Imiona">
-
-                <label for="fname">Kolorystyka</label>
-                <input type="text" id="miejsce" name="Imiona" placeholder="Kolorystyka">
-
-                <label for="fname">Styl</label>
-                <input type="text" id="miejsce" name="Imiona" placeholder="Styl">
-
-                <label for="fname">Kwiaty</label>
-                <input type="text" id="miejsce" name="Imiona" placeholder="Kwiaty">
-
-                <label for="fname">Zakres dekoracji</label>
-                <br><br>
-                <label>Kościół<input type="checkbox" id="myCheck"></label>
-                <label>Ceremonia w plenerze<input type="checkbox" id="myCheck"></label>
-                <label>Sala wesela<input type="checkbox" id="myCheck"></label>
-                <label>Samochód<input type="checkbox" id="myCheck"></label>
-                <label>Bukiet Panny Młodej<input type="checkbox" id="myCheck"></label>
-                <label>Bukiety Druhen<input type="checkbox" id="myCheck"></label>
-                <label>Butonierka<input type="checkbox" id="myCheck"></label>
-                <label>Inne<input type="checkbox" id="myCheck"></label>
-
-                <label for="subject">Treść</label>
-                <textarea id="subject" name="subject" placeholder="Napisz..." style="height:140px"></textarea>
-            
+                    <button class="accordion"><h3>2. Dekoracje</h3></button>
+                    <div class="panel">
+                        <form action="/action_page.php">
+                        <br>
+                        <label for="fname">Motyw przewodni</label>
+                        <input type="text" id="imiona" name="Imiona">
+        
+                        <label for="fname">Kolorystyka</label>
+                        <input type="text" id="miejsce" name="Imiona" placeholder="Kolorystyka">
+        
+                        <label for="fname">Styl</label>
+                        <input type="text" id="miejsce" name="Imiona" placeholder="Styl">
+        
+                        <label for="fname">Kwiaty</label>
+                        <input type="text" id="miejsce" name="Imiona" placeholder="Kwiaty">
+        
+                        <label for="fname">Zakres dekoracji</label>
+                        <br><br>
+                        <label>Kościół<input type="checkbox" id="myCheck"></label>
+                        <label>Ceremonia w plenerze<input type="checkbox" id="myCheck"></label>
+                        <label>Sala wesela<input type="checkbox" id="myCheck"></label>
+                        <label>Samochód<input type="checkbox" id="myCheck"></label>
+                        <label>Bukiet Panny Młodej<input type="checkbox" id="myCheck"></label>
+                        <label>Bukiety Druhen<input type="checkbox" id="myCheck"></label>
+                        <label>Butonierka<input type="checkbox" id="myCheck"></label>
+                        <label>Inne<input type="checkbox" id="myCheck"></label>
+        
+                        <label for="subject">Treść</label>
+                        <textarea id="subject" name="subject" placeholder="Napisz..." style="height:140px"></textarea>
+                    </div>
                 <input type="submit" value="Wyślij">
               </form>
             </div>
@@ -393,23 +384,26 @@
     }
   </script>
 
-<!--<script>
+<script>
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar").setAttribute(
         "style", "top:0px; padding-top: 0px;");
+        document.getElementById("menu").setAttribute(
+        "style", "top:16px");
     } else {
       document.getElementById("navbar").setAttribute(
         "style", "top:-22px; padding-top: 22px;");
+        document.getElementById("menu").setAttribute(
+        "style", "top:5px");
     }
     prevScrollpos = currentScrollPos;
   }
 </script>
 
--->
-  
+
 
 
 
@@ -486,6 +480,26 @@
           }, 1000);
       });
   });
+</script>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("activee");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
 </script>
 </body>
 

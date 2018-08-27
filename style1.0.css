@@ -3,15 +3,13 @@
   margin: 0;
   box-sizing: border-box; 
 }
-body{
-  overflow: scroll;
-  height: 100%;
+
 }
 html{
   font-size: 16px;
   height: 100%;
   font-family: Roboto;
-  overflow:overautolay;
+  
 }
 @font-face {
   font-family:'LavanderiaRegular';
@@ -89,21 +87,22 @@ html{
   visibility: visible;
   transform: scaleX(1);
 }
-/*.pagecontainer{
-  height: 100vh;
-  background-image:url("img/tlo2.jpg");
-  background-size: cover; 
-  background-attachment: fixed;
-}*/
 .pagecontainer{
-  background-image:url("img/tlo2.jpg");
+  height: 100vh;
   
-  height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+.pagecontainer:before{
+  content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-image: url(img/tlo2.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    z-index: -4;
+  }
 
 .pagecontainer3{
   height: 100%;
@@ -149,6 +148,7 @@ html{
   height: 35vh;
   width: 40vw;
   text-align: center;
+  font-size: 1.1rem;
 }
 .pagecontainer p{
   padding: 10px;
@@ -182,6 +182,7 @@ html{
 .workcontainer , .referencecontainer{
   display: flex;
   justify-content: center;
+  margin-top: 18px;
 }
 .workcontainer__headline, .referencecontainer__headline{
   background-color: #f4e3d3;
@@ -209,14 +210,18 @@ iframe{
    position: relative;
 }
 
-
+.boxes__two--heading{
+  margin-top: 25px;
+}
 
 /* Slideshow container */
 .referencecontainer__slide {
   max-width: 420px;
   position: relative;
   margin: auto;
-  
+}
+.bigger{
+  max-width: 520px;
 }
 
 /* Hide the images by default */
@@ -331,7 +336,9 @@ iframe{
   MARGIN-LEFT: 2px;
     margin-right: 2px;
 }
-
+.dummy{
+  height: 80px;
+}
 .row1, .row2{
   display: flex;
   padding: 0 4px;
@@ -403,7 +410,42 @@ footer{
 .new {
   bottom: -200vh;
 }
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #f4e3d3;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.activee:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 input, select, textarea {
   width: 100%;
   padding: 12px;
@@ -448,8 +490,8 @@ input[type=submit]:hover {
   
 }
 .infocontainer__photo {
-  height: 35vh;
-  width: 20vw;
+  height: 38vh;
+    width: 34vw;
   
 }
 
@@ -479,7 +521,7 @@ footer > div p{
 }
 
 .boxes{
-  height: 100%;
+  
   width: 100%;
   display: flex;
 }
@@ -503,6 +545,7 @@ footer > div p{
 }
 .boxes__one--text{
   padding: 0px 20px;
+  line-height: 1.5;
 }
 
 .boxes__one--button{
@@ -543,7 +586,13 @@ footer > div p{
   width: 100%;
   height: 100%;
 }
-
+.numbertext_zap{
+  font-weight: 600;
+  font-family: sun;
+  font-size: 3.2rem;
+  letter-spacing: 6px;
+  color: floralwhite;
+}
 .mobile{
   width: 68%;
   flex-direction: column;
@@ -583,6 +632,11 @@ footer > div p{
     left: 50px;
     font-size: 20px;
     display: block;
+    font-size: 2.2rem;
+    font-family: "sun";
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
   }
   
   a
@@ -778,17 +832,24 @@ footer > div p{
     height: auto;
     width: 56vw;
   }
-  .navbar__menu:before {
-    top: 3px;
+  .navbar__menu2:before {
+    top: 16px;
     left: -190px;
     width: 300%;
-    
+    content: '';
+    position: absolute;
+    background: rgb(187, 40, 109);
+    height: 2.2px;
   }
   .hero2__box {
     
     width: 60vw; 
   }
+  .pagecontainer{
 
+    height: 100%;
+
+  }
   .pagecontainer3{
     height: 100%;
     background-image:url("img/tlo2-m.jpg");
@@ -824,9 +885,11 @@ footer > div p{
   margin: auto;
 }
 .infocontainer__photo{
-  height: 17vh;
-    width: 30vw;
-}
+  height: 24vh;
+    width: 34vw;
+    margin: 6px;
+  }
+
 .boxes{
   display: block;
 }
